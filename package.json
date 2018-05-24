@@ -1,0 +1,51 @@
+{
+  "name": "cra-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ueno/react-scripts": "0.5.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "axios": "0.18.0",
+    "compression": "1.7.2",
+    "express": "4.16.3",
+    "helmet": "3.12.1",
+    "hpp": "0.2.2",
+    "mobx": "4.2.1",
+    "mobx-react": "5.1.2",
+    "react-helmet": "5.2.0",
+    "react-jobs": "1.0.0"
+  },
+  "devDependencies": {
+    "react-hot-loader": "4.2.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "node build/server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "static": "./node_modules/@ueno/react-scripts/bin/static.sh",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "react-scripts build"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "main": "build/server.js",
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "jsx-a11y/href-no-hash": false
+    }
+  }
+}
