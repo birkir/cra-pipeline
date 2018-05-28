@@ -10,9 +10,7 @@ pipeline {
     }
     stage('Tests') {
       steps {
-        "Unit Tests": {
-          sh 'docker-compose run --name test --rm web npm run test'
-        }
+        sh 'docker-compose run --name test --rm web npm run test'
       }
     }
 
